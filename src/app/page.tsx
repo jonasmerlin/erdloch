@@ -61,8 +61,6 @@ function MusicPlayer() {
   useEffect(() => {
     if (audioRef.current) {
       audioRef.current.volume = 0.1;
-
-      buttonRef.current?.click();
     }
   }, []);
 
