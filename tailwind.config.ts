@@ -68,14 +68,15 @@ const config = {
           to: { height: "0" },
         },
         spin: {
-          '0%, 100%': { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(360deg)' },
+          '0%, 100%': { transform: 'rotate(0deg) scale(0.3)' },
+          '50%': { transform: 'rotate(180deg) scale(1.0)' },
+          '100%': { transform: 'rotate(360deg) scale(0.3)' },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "spinning": 'spin 12s linear infinite',
+        "spinning": 'spin 18s linear infinite',
       },
     },
   },
