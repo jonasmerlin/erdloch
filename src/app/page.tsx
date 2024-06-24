@@ -67,9 +67,12 @@ function MusicPlayer() {
   return (
     <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
       <Button ref={buttonRef} onClick={playSound}>
-        {playing ? <RxPause /> : <RxPlay />}
+        {playing ? <RxPause /> : (<>
+          <RxPlay />
+          Play Erdloch Ambiance
+        </>)}
       </Button>
-      <audio ref={audioRef} src="/lord-of-the-weed-ambience.mp3" loop></audio>
+      <audio ref={audioRef} src="/lord-of-the-weed-ambiance.mp3" loop></audio>
     </div>
   );
 }
