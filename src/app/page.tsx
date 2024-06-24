@@ -73,12 +73,12 @@ function MusicPlayer() {
         {playing ? (
           <>
             <RxPause />
-            Pause Erdloch Ambiance
+            Pause Erdloch Ambiente
           </>
         ) : (
           <>
             <RxPlay />
-            Play Erdloch Ambiance
+            Play Erdloch Ambiente
           </>
         )}
       </Button>
