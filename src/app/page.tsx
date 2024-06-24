@@ -50,7 +50,6 @@ function MusicPlayer() {
       if (playing) {
         audioRef.current.pause();
       } else {
-        audioRef.current.currentTime = 0;
         audioRef.current.play();
       }
 
