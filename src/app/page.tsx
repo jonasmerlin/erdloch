@@ -2,12 +2,15 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 
 import { RxPlay, RxPause } from "react-icons/rx";
 
 import erdlochIllustration from "../../public/erdloch-illustration.jpg";
+
+import erdloch1 from "../../public/erdloch-1.jpg";
 
 export default function Home() {
   return (
@@ -18,7 +21,7 @@ export default function Home() {
         </p>
         <p className="">Anerkannte Konsumform seit 1867!</p>
 
-          <MusicPlayer />
+        <MusicPlayer />
       </div>
 
       <div className="animate-spinning">
@@ -31,7 +34,23 @@ export default function Home() {
         />
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left"></div>
+      <div className="font-mono flex flex-col text-center">
+        <div>Gallerie</div>
+        <div>Die schönsten Erdlöcher zum Reinlunzen</div>
+      </div>
+      <div className="h-4" />
+      <div className="font-mono">
+        <Image
+          src={erdloch1}
+          alt="Erdloch Illustration"
+          width={erdloch1.width / 2}
+          height={erdloch1.height / 2}
+          className="rounded-lg"
+        />
+      </div>
+      {/* <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
+      <Link href="/guestbook">Guestbook</Link>
+      </div> */}
     </main>
   );
 }
