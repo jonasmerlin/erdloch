@@ -35,9 +35,9 @@ export default function Home() {
       </div>
 
       <div className="font-mono flex flex-col text-center">
-        <div>Offzielle Erdloch Gallerie</div>
+        <div className="font-bold">Offzielle Erdloch Gallerie</div>
         <div>Die schönsten Erdlöcher zum Reinlunzen und Genießen</div>
-        <div>(Nicht vergessen: Das Louvre ist am Ende auch nur ein Erdloch!)</div>
+        <div className="text-slate-500 text-xs">(Nicht vergessen: Das Louvre ist am Ende auch nur ein Erdloch!)</div>
       </div>
       <div className="h-4" />
       <div className="font-mono">
